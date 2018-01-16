@@ -1,0 +1,20 @@
+<div class="ui-g-12 ui-md-12 ui-lg-12">
+    <p-panel>
+        <p-header>
+            <div class="panel-header">EARNING GRAPH OVERVIEW</div>
+            <div class="panel-tools">
+                <i class="fa fa-refresh"></i>
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </div>
+        </p-header>
+        <p-chart type="line" height="280px" [data]="data" [options]="options" (onDataSelect)="selectData($event)">
+        </p-chart>
+        <div class="ui-g">
+            <div class="ui-g-3 ui-md-3 ui-lg-3" *ngFor="let earningDataItem of earningDataItems">
+                <div>{{earningDataItem.value}}</div>
+                <div>{{earningDataItem.label}}</div>
+            </div>
+        </div>
+    </p-panel>
+</div>

@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+import { SideMenuModule } from './side-menu/side-menu.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { AppComponent } from './app.component';
 
 
@@ -10,7 +12,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    SideMenuModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
