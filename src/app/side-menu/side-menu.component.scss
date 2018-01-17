@@ -1,13 +1,12 @@
-#side-menu {
+.side-menu {
     height: 100%;
     width: 315px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #293744;
     overflow-x: hidden;
-    transition: 0.5s;
 
     #green-line {
         height: 60px;
@@ -27,3 +26,5 @@
         }
     }
 }
+
+@import '..\\app.component';

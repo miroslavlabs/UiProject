@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { PanelMenuModule, PanelModule } from 'primeng/primeng';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DataTableModule, DataTable } from 'primeng/primeng';
+import { DataTableModule } from 'primeng/primeng';
 import { CommonModule } from '@angular/common';
 
 

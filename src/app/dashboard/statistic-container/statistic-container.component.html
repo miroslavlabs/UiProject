@@ -8,7 +8,7 @@
             </div>
             <div class="title">{{statisticSource.title}}</div>
             <div class="numbers">
-                <i *ngIf="statisticSource.arrow==true" class="fa fa-long-arrow-up"></i>
+                <i *ngIf="statisticSource.arrow==='true'" class="fa fa-long-arrow-up"></i>
                     {{statisticSource.value}}
                 <div *ngIf="statisticSource.percent!=undefined" class="percent"> (+0.50%)</div>
             </div>
