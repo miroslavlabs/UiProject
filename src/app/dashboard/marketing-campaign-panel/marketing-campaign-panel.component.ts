@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Chart } from 'chart.js'
 
 @Component({
     selector: 'marketing-campaign-panel',
@@ -20,15 +21,18 @@ export class MarketingCampaignPanelComponent {
                         "#0bc4df",
                         "#1e75eb",
                         "#f1a80a"
-                    ]
+                    ],
+                    borderWidth: [0, 0, 0, 0]
                 }]
         };
 
         this.options = {
             responsive: true,
+            maintainAspectRatio: false,
             legend: {
                 display: true,
-            }
+            },
+            cutoutPercentage: 70
         };
     }
 }

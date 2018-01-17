@@ -19,7 +19,8 @@
                         {{trafficSource.numbers}}
                     </div>
                     <div class="ui-g-4 ui-md-4 ui-lg-4">
-                        {{trafficSource.chart}}
+                        <p-chart type="line" height="50px" [data]="trafficSource.chart" [options]="chartOptions" (onDataSelect)="selectData($event)">
+                        </p-chart>
                     </div>
                 </div>
             </ng-template>

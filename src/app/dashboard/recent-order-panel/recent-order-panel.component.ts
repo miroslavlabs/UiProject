@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'recent-order-panel',
-  templateUrl: './recent-order-panel.component.html'
+  templateUrl: './recent-order-panel.component.html',
+  styleUrls: ['./recent-order-panel.component.scss']
 })
 export class RecentOrderComponent { 
   recentOrders: any;

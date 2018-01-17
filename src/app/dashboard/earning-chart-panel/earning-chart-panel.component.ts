@@ -67,7 +67,6 @@ export class EarningChartComponent {
         this.options = {
             responsive: true,
             maintainAspectRatio: false,
-            height: 245,
             legend: {
                 display: false
             },

@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { PanelMenuModule, PanelModule } from 'primeng/primeng';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DataTableModule, DataTable } from 'primeng/primeng';
 import { CommonModule } from '@angular/common';
 
 
@@ -16,6 +17,7 @@ import { RecentOrderComponent } from './recent-order-panel.component';
     BrowserModule,
     PanelMenuModule,
     PanelModule,
+    DataTableModule,
     BrowserAnimationsModule,
     CommonModule
   ],

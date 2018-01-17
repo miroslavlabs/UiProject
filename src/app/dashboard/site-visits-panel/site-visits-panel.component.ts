@@ -18,13 +18,35 @@ export class SiteVisitPanelComponent {
                     data: [1000, 2200, 3600, 2200, 2600, 2500, 2000],
                     fill: false,
                     label: 'New Visitors',
-                    borderColor: '#00cccc'
+                    backgroundColor: '#00cccc',
+                    borderColor: '#00cccc',
+                    pointBorderColor: "#fff",
+                    pointBackgroundColor: '#00cccc',
+                    pointHoverBorderColor: "#fff",
+                    pointHoverBackgroundColor: '#00cccc',
+                    lineTension: 0, //Straight Lines
+                    borderWidth: 4,
+                    pointRadius: 8,
+                    pointBorderWidth: 3,
+                    pointHoverRadius: 8,
+                    pointHoverBorderWidth: 3
                 },
                 {
                     data: [1800, 4800, 4000, 1900, 8600, 2700, 9000, 2800, 4800],
                     fill: false,
                     label: 'Old Visitors',
-                    borderColor: '#f1a80a'
+                    backgroundColor: '#f1a80a',
+                    borderColor: '#f1a80a',
+                    pointBorderColor: "#fff",
+                    pointBackgroundColor: '#f1a80a',
+                    pointHoverBorderColor: "#fff",
+                    pointHoverBackgroundColor: '#f1a80a',
+                    lineTension: 0, //Straight lines
+                    borderWidth: 4,
+                    pointRadius: 8,
+                    pointBorderWidth: 3,
+                    pointHoverRadius: 8,
+                    pointHoverBorderWidth: 3
                 }
             ]
         };
@@ -51,12 +73,15 @@ export class SiteVisitPanelComponent {
         this.options = {
             responsive: true,
             maintainAspectRatio: false,
-            height: 245,
             legend: {
                 display: true,
-                fill: true,
+                position: 'top',
+                fullWidth: true,
                 labels:{
-                    boxWidth: 20
+                    boxWidth: 25,
+                    fontSize: 14,
+                    fontColor: '#777',
+                    fontStyle: 'bold'
                 }
             },
             scales: {
