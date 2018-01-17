@@ -1,0 +1,38 @@
+#container {
+    width: 100%;
+    position: relative;
+
+    #user-image {
+        display: inline-block;
+        height: 75px;
+        width: 25%;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-left: 25px;
+    }
+
+    #user-details {
+        width: 70%;
+        display: inline-block;
+        font-size: 16px;
+        color: #fff;
+        position: absolute;
+        top: 20%;
+        left: 40%;
+
+        #user-name {
+            font-size: 20px;
+        }
+    }
+}
+
+#user-tools {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 90px 40px 0;
+    text-align: right;
+     
+    i {
+        padding-right: 7%;
+    }
+}

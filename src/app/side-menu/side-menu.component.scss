@@ -1,14 +1,20 @@
 #side-menu {
-    height: 100%; /* 100% Full-height */
-    width: 315px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    width: 315px;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding-top: 60px; 
-    transition: 0.5s; 
+    transition: 0.5s;
+
+    #green-line {
+        height: 60px;
+        width: 100%;
+        background-color: #85c875;
+        margin-bottom: 40px;
+    }
     
     .menu-category {
         color: #bed1e4;

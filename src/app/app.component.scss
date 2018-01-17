@@ -1,3 +1,18 @@
+#hide-show-button {
+    background-color: #85c875;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+    position: fixed;
+    z-index: 2;
+    left: 295px;
+    top: 12px;
+    text-align: center;
+    line-height: 35px;
+}
+
 #dashboard {
     width: 75%;
     transition: all 0.3s;

@@ -1,0 +1,17 @@
+<div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3" *ngFor="let statisticSource of statisticSources">
+        <div class="box">
+            <div class="icon-container">
+                <div class="box-icon">
+                    <i class="fa {{statisticSource.icon}}"></i>
+                </div>
+            </div>
+            <div class="title">{{statisticSource.title}}</div>
+            <div class="numbers">
+                <i *ngIf="statisticSource.arrow==true" class="fa fa-long-arrow-up"></i>
+                    {{statisticSource.value}}
+                <div *ngIf="statisticSource.percent!=undefined" class="percent"> (+0.50%)</div>
+            </div>
+        </div>
+    </div>
+</div>

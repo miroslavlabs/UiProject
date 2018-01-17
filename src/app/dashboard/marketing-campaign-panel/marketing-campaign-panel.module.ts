@@ -6,12 +6,12 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ChartModule } from 'primeng/primeng';
 
-import { EarningChartComponent } from './earning-chart-panel.component';
+import { MarketingCampaignPanelComponent } from './marketing-campaign-panel.component';
 
 
 @NgModule({
   declarations: [
-    EarningChartComponent
+    MarketingCampaignPanelComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +22,6 @@ import { EarningChartComponent } from './earning-chart-panel.component';
     CommonModule,
     ChartModule
   ],
-  exports: [ EarningChartComponent ]
+  exports: [ MarketingCampaignPanelComponent ]
 })
-export class EarningChartModule { }
+export class MarketingCampaignPanelModule { }

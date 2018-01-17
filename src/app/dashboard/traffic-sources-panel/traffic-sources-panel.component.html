@@ -1,0 +1,28 @@
+<div class="ui-g-12 ui-md-4 ui-lg-4">
+    <p-panel >
+        <p-header>
+            <div class="panel-header">
+                TRAFFIC SOURCES
+            </div>
+            <div class="panel-tools">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-times"></i>
+            </div>
+        </p-header>
+        <p-dataList [value]="trafficSources">
+            <ng-template let-trafficSource pTemplate="item">
+                <div class="ui-g">
+                    <div class="ui-g-4 ui-md-4 ui-lg-4">
+                        {{trafficSource.text}}
+                    </div>
+                    <div class="ui-g-4 ui-md-4 ui-lg-4">
+                        {{trafficSource.numbers}}
+                    </div>
+                    <div class="ui-g-4 ui-md-4 ui-lg-4">
+                        {{trafficSource.chart}}
+                    </div>
+                </div>
+            </ng-template>
+        </p-dataList>
+    </p-panel>
+</div>

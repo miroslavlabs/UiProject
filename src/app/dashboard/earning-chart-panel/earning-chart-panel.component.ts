@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'earning-chart',
+    selector: 'earning-chart-panel',
     styleUrls: ['/earning-chart-panel.component.scss'],
     templateUrl: './earning-chart-panel.component.html'
 })
