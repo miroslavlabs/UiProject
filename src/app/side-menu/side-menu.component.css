@@ -18,10 +18,65 @@
 
 .side-menu .menu-category {
   color: #bed1e4;
+  font-size: 20px;
   padding: 15px 25px;
 }
 
-.side-menu .generalMenuItems .ui-menuitem {
+.side-menu .generalMenuItems .ui-panelmenu .ui-panelmenu-header.ui-state-active {
+  background-color: #253340;
+  border-left: 4px solid #85c875;
+  height: 67px;
+}
+
+.side-menu .generalMenuItems .ui-panelmenu .ui-panelmenu-header.ui-state-active a {
+  background-color: #253340;
+  height: 67px;
+  line-height: 53px;
+}
+
+.side-menu .generalMenuItems .ui-panelmenu-header {
+  height: 67px;
+  padding-left: 15px;
+}
+
+.side-menu .generalMenuItems .ui-widget {
+  background-color: #293744;
+  font-size: 20px;
+  line-height: 53px;
+  border-color: #293744;
+}
+
+.side-menu .generalMenuItems .ui-widget:hover {
+  background-color: #293744;
+  border-color: #293744;
+}
+
+.side-menu .generalMenuItems .ui-widget .ui-menuitem-text,
+.side-menu .generalMenuItems .ui-widget .ui-menuitem-icon,
+.side-menu .generalMenuItems .ui-widget .ui-panelmenu-icon {
+  color: #fff;
+}
+
+.side-menu .generalMenuItems .ui-widget .ui-menuitem-text {
+  padding-left: 15px;
+}
+
+.side-menu .generalMenuItems .ui-panelmenu-content-wrapper {
+  background-color: #293744;
+  padding-left: 80px;
+  border-color: #293744;
+}
+
+.side-menu .generalMenuItems .ui-panelmenu-content-wrapper .ui-panelmenu-content {
+  background-color: #293744;
+  border-color: #293744;
+}
+
+.side-menu .generalMenuItems .ui-panelmenu-content-wrapper .ui-panelmenu-content .ui-menuitem-link {
+  color: #fff;
+}
+
+.side-menu .generalMenuItems .ui-panelmenu-content-wrapper .ui-panelmenu-content .ui-menuitem-link:hover {
   background-color: #293744;
 }
 
@@ -50,7 +105,7 @@
 
 .dashboard {
   transition: all 0.3s;
-  margin-left: 315px;
+  margin-left: 305px;
 }
 
 .expand {

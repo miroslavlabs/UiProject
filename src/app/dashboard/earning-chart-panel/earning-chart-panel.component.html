@@ -10,10 +10,12 @@
         </p-header>
         <p-chart type="line" height="280px" [data]="data" [options]="options" (onDataSelect)="selectData($event)">
         </p-chart>
-        <div class="ui-g">
-            <div class="ui-g-3 ui-md-3 ui-lg-3" *ngFor="let earningDataItem of earningDataItems">
-                <div>{{earningDataItem.value}}</div>
-                <div>{{earningDataItem.label}}</div>
+        <div class="ui-g chart-details">
+             <div class="ui-g-3 ui-md-3 ui-lg-3 chart-block" *ngFor="let earningDataItem of earningDataItems">
+                <div class="container">
+                    <div class="chart-value">{{earningDataItem.value}}</div>
+                    <div class="chart-label">{{earningDataItem.label}}</div>
+                </div>
             </div>
         </div>
     </p-panel>

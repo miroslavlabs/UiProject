@@ -9,14 +9,14 @@
                 <i class="fa fa-times"></i>
             </div>
         </p-header>
-        <p-dataList [value]="trafficSources">
+        <p-dataList [value]="trafficSources" class="trafficSourcesTable">
             <ng-template let-trafficSource pTemplate="item">
                 <div class="ui-g">
                     <div class="ui-g-4 ui-md-4 ui-lg-4">
-                        {{trafficSource.text}}
+                        <div class="table-text">{{trafficSource.text}}</div>
                     </div>
                     <div class="ui-g-4 ui-md-4 ui-lg-4">
-                        {{trafficSource.numbers}}
+                            <div class="table-numbers">{{trafficSource.numbers}}</div>
                     </div>
                     <div class="ui-g-4 ui-md-4 ui-lg-4">
                         <p-chart type="line" height="50px" [data]="trafficSource.chart" [options]="chartOptions" (onDataSelect)="selectData($event)">

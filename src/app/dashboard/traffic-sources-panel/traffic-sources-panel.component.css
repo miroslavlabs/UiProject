@@ -26,3 +26,36 @@
 .item:first-child {
   padding-left: 5%;
 }
+
+.trafficSourcesTable .ui-datalist, .trafficSourcesTable .ui-widget {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.trafficSourcesTable .ui-datalist .ng-star-inserted .ui-g, .trafficSourcesTable .ui-widget .ng-star-inserted .ui-g {
+  margin-bottom: -15px;
+}
+
+.trafficSourcesTable .ui-widget-content {
+  border: none;
+}
+
+.trafficSourcesTable .ui-widget-content .table-text {
+  height: 27px;
+  width: 77px;
+  background-color: #3366ff;
+  border-radius: 7px;
+  margin: auto;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 27px;
+}
+
+.trafficSourcesTable .ui-widget-content .table-numbers {
+  color: #777777;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+}

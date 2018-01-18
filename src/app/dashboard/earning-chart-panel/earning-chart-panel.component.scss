@@ -1,1 +1,20 @@
 @import '..\\dashboard.component';
+
+.chart-details {
+
+    .chart-block {
+        padding-left: 13%;
+
+        .container {
+            border-left: 3px solid #99cc66;
+            font-size: 20px;
+            padding: 0 0 0 15px;
+            .chart-value {
+                color: #5c636c;
+            }
+            .chart-label {
+                color: #a5acb4;
+            }
+        }
+    }
+}

@@ -17,12 +17,65 @@
     
     .menu-category {
         color: #bed1e4;
+        font-size: 20px;
         padding: 15px 25px;
     }
 
     .generalMenuItems {
-        .ui-menuitem {
+        .ui-panelmenu .ui-panelmenu-header.ui-state-active  {
+            background-color: #253340;
+            border-left: 4px solid #85c875;
+            height: 67px;
+
+            a {
+                background-color: #253340;
+                height: 67px;
+                line-height: 53px;
+            }
+        }
+
+        .ui-panelmenu-header {
+            height: 67px;
+            padding-left: 15px;
+        }
+
+        .ui-widget {
             background-color: #293744;
+            font-size: 20px;
+            line-height: 53px;
+            border-color: #293744;
+
+            &:hover {
+                background-color: #293744;
+                border-color: #293744;
+            }
+
+            .ui-menuitem-text,
+            .ui-menuitem-icon,
+            .ui-panelmenu-icon {
+                color: #fff;
+            }
+
+            .ui-menuitem-text {
+                padding-left: 15px;
+            }
+        }
+        .ui-panelmenu-content-wrapper {
+            background-color: #293744;
+            padding-left: 80px;
+            border-color: #293744;
+
+            .ui-panelmenu-content {
+                background-color: #293744;
+                border-color: #293744;
+                .ui-menuitem-link {
+                    color: #fff;
+                    
+                    &:hover {
+                        background-color: #293744;
+                    }
+                }
+            }
         }
     }
 }

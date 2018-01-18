@@ -1,65 +1,3 @@
-.box {
-  height: 175px;
-  width: 230px;
-  border: 1px solid #d9d5d5;
-  margin: auto;
-}
-
-.box .icon-container {
-  border-bottom: 1px solid #d9d5d5;
-}
-
-.box .icon-container .box-icon {
-  color: #0bc4df;
-  font-size: 31px;
-  margin: 28px auto 30px auto;
-  width: 15%;
-  text-align: center;
-}
-
-.box .title {
-  border: 1px solid #d9d5d5;
-  border-radius: 12px;
-  padding: 3px 10px;
-  width: 30%;
-  text-align: center;
-  font-size: 14px;
-  z-index: 1;
-  margin: -13px auto 0px auto;
-  background-color: #fff;
-}
-
-.box .numbers {
-  font-size: 20px;
-  font-weight: 600;
-  color: #666666;
-  width: 57%;
-  margin: 18px auto 28px auto;
-  text-align: center;
-}
-
-.box .numbers .fa-long-arrow-up {
-  color: #ff5e3a;
-}
-
-.box .numbers .fa-dot-circle-o {
-  color: #f1ab13;
-}
-
-.box .numbers .fa-usd {
-  color: #1e75eb;
-}
-
-.box .numbers .fa-rocket {
-  color: #85c875;
-}
-
-.box .numbers .percent {
-  color: #ff5e3a;
-  font-size: 15px;
-  display: inline-block;
-}
-
 .panel-header {
   display: inline-block;
   color: #777777;
@@ -87,4 +25,22 @@
 
 .item:first-child {
   padding-left: 5%;
+}
+
+.chart-details .chart-block {
+  padding-left: 13%;
+}
+
+.chart-details .chart-block .container {
+  border-left: 3px solid #99cc66;
+  font-size: 20px;
+  padding: 0 0 0 15px;
+}
+
+.chart-details .chart-block .container .chart-value {
+  color: #5c636c;
+}
+
+.chart-details .chart-block .container .chart-label {
+  color: #a5acb4;
 }

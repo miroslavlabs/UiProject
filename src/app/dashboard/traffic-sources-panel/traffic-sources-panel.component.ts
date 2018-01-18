@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'traffic-sources-panel',
   templateUrl: './traffic-sources-panel.component.html',
-  styleUrls: ['./traffic-sources-panel.component.scss']
+  styleUrls: ['./traffic-sources-panel.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class TrafficSourcesPanelComponent {
   trafficSources: any;

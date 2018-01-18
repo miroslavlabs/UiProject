@@ -48,25 +48,35 @@ export class EarningChartComponent {
         this.earningDataItems = [
             {
                 label: 'Revenue',
-                value: '$13,234'
+                value: '$13,234',
+                color: '#85c875'
             },
             {
                 label: 'Order',
-                value: '2,35,090'
+                value: '2,35,090',
+                color: '#f1a80a'
             },
             {
                 label: 'Tax',
-                value: '$1,34,900'
+                value: '$1,34,900',
+                color: '#1e75eb'
             },
             {
                 label: 'Shipment',
-                value: '$1,134'
+                value: '$1,134',
+                color: '#0bc4df'
             }
         ];
 
         this.options = {
             responsive: true,
             maintainAspectRatio: false,
+            label: {
+                font: {
+                    familySize: 11,
+                    fontColor: '#777777'
+                }
+            },
             legend: {
                 display: false
             },

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { PanelModule } from 'primeng/primeng';
 
+import { TopToolsModule } from './top-tools/top-tools.module';
 import { StatisticContainerModule } from './statistic-container/statistic-container.module';
 import { EarningChartModule } from './earning-chart-panel/earning-chart-panel.module';
 import { TopSearchModule } from './top-search-panel/top-search-panel.module';
@@ -19,6 +20,7 @@ import { DashboardComponent } from './dashboard.component';
   imports: [
     BrowserModule,
     PanelModule,
+    TopToolsModule,
     StatisticContainerModule,
     EarningChartModule,
     TopSearchModule,
