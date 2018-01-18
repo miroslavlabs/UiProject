@@ -11,6 +11,26 @@
                 <i class="fa fa-times"></i>
             </div>
         </p-header>
+        <div class="ui-g">
+            <div class="ui-g-7 ui-md-7 ui-lg-7">
+                <p-gmap [options]="mapOptions" [style]="{'width':'100%','height':'355px'}"></p-gmap>
+            </div>
+            <div class="ui-g-5 ui-md-5 ui-lg-5">
+                <p-dataList [value]="topSearches">
+                        <ng-template let-topSearch pTemplate="item">
+                            <div class="ui-g">
+                                <div class="ui-g-5 ui-md-5 ui-lg-5">
+                                    <img class="searchCountryImg" src="{{topSearch.countryImage}}"/>
+                                </div>
+                                <div class="ui-g-7 ui-md-7 ui-lg-7">
+                                    <div class="">{{topSearch.countryName}}</div>
+                                    <div class="">{{topSearch.searchPercent}}</div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </p-dataList>
+            </div>
+        </div>
         <p-footer>
                 Footer content here
         </p-footer>
