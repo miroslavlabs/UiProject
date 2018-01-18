@@ -5,7 +5,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #293744;
+  background-color: #33414e;
   overflow-x: hidden;
 }
 
@@ -13,13 +13,16 @@
   height: 60px;
   width: 100%;
   background-color: #85c875;
-  margin-bottom: 40px;
 }
 
 .side-menu .menu-category {
   color: #bed1e4;
   font-size: 20px;
   padding: 15px 25px;
+}
+
+.side-menu .generalMenuItems .ui-panelmenu .ui-panelmenu-header a {
+  text-decoration: none;
 }
 
 .side-menu .generalMenuItems .ui-panelmenu .ui-panelmenu-header.ui-state-active {
@@ -32,6 +35,11 @@
   background-color: #253340;
   height: 67px;
   line-height: 53px;
+  text-decoration: none;
+}
+
+.side-menu .generalMenuItems .ui-panelmenu .ui-panelmenu-header.ui-state-active a:hover {
+  text-decoration: none;
 }
 
 .side-menu .generalMenuItems .ui-panelmenu-header {
@@ -40,21 +48,33 @@
 }
 
 .side-menu .generalMenuItems .ui-widget {
-  background-color: #293744;
+  background-color: #33414e;
   font-size: 20px;
   line-height: 53px;
-  border-color: #293744;
+  border-color: #33414e;
 }
 
 .side-menu .generalMenuItems .ui-widget:hover {
-  background-color: #293744;
-  border-color: #293744;
+  background-color: #33414e;
+  border-color: #33414e;
 }
 
 .side-menu .generalMenuItems .ui-widget .ui-menuitem-text,
 .side-menu .generalMenuItems .ui-widget .ui-menuitem-icon,
 .side-menu .generalMenuItems .ui-widget .ui-panelmenu-icon {
   color: #fff;
+}
+
+.side-menu .generalMenuItems .ui-widget ul.ui-menu-list li.ui-menuitem:first-child .fa-circle-o {
+  color: #85c875;
+}
+
+.side-menu .generalMenuItems .ui-widget ul.ui-menu-list li.ui-menuitem:nth-child(2) .fa-circle-o {
+  color: #0bc4df;
+}
+
+.side-menu .generalMenuItems .ui-widget ul.ui-menu-list li.ui-menuitem:last-child .fa-circle-o {
+  color: #f1a80a;
 }
 
 .side-menu .generalMenuItems .ui-widget .ui-menuitem-text {
@@ -78,6 +98,10 @@
 
 .side-menu .generalMenuItems .ui-panelmenu-content-wrapper .ui-panelmenu-content .ui-menuitem-link:hover {
   background-color: #293744;
+}
+
+.side-menu #elements-menu-category-header {
+  border-top: 1px solid #253340;
 }
 
 .position {

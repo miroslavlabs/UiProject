@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'earning-chart-panel',
     styleUrls: ['/earning-chart-panel.component.scss'],
-    templateUrl: './earning-chart-panel.component.html'
+    templateUrl: './earning-chart-panel.component.html',
+    encapsulation: ViewEncapsulation.None
 })
 export class EarningChartComponent {
     data: any;
@@ -71,12 +72,6 @@ export class EarningChartComponent {
         this.options = {
             responsive: true,
             maintainAspectRatio: false,
-            label: {
-                font: {
-                    familySize: 11,
-                    fontColor: '#777777'
-                }
-            },
             legend: {
                 display: false
             },
@@ -84,6 +79,9 @@ export class EarningChartComponent {
                 xAxes: [{
                     gridLines: {
                         borderDash: [2, 2]
+                    },
+                    ticks: {
+                        fontFamily: "'Lato', sans-serif"
                     }
                 }],
                 yAxes: [{
@@ -93,7 +91,8 @@ export class EarningChartComponent {
                     ticks: {
                         min: 0,
                         max: 20000,
-                        stepSize: 5000
+                        stepSize: 5000,
+                        fontFamily: "'Lato', sans-serif"
                     }
                 }]
             }

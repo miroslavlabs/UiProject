@@ -1,3 +1,11 @@
+.ui-widget-header {
+  background: #fff;
+}
+
+.ui-panel {
+  box-shadow: 0 0 4px 1px #bdc1c5;
+}
+
 .panel-header {
   display: inline-block;
   color: #777777;
@@ -33,6 +41,7 @@
   border: 1px solid #d9d5d5;
   margin: auto;
   background-color: #fff;
+  box-shadow: 0 0 4px 1px #bdc1c5;
 }
 
 .box .icon-container {

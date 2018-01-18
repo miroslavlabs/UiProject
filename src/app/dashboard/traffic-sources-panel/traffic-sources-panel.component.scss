@@ -15,11 +15,40 @@
     .ui-widget-content {
         border: none;
 
+        ul.ui-datalist-data {
+            li.ng-star-inserted {
+                &:first-child {
+                    .table-text {
+                        background-color: #3366ff;
+                    }
+                }
+                &:nth-child(2) {
+                    .table-text {
+                        background-color: #00cccc;
+                    }
+                }
+                &:nth-child(3) {
+                    .table-text {
+                        background-color: #f1a80a;
+                    }
+                }
+                &:nth-child(4) {
+                    .table-text {
+                        background-color: #85c875;
+                    }
+                }
+                &:last-child {
+                    .table-text {
+                        background-color: #ff6633;
+                    }
+                }
+            }
+        }
+
         .table-text {
             height: 27px;
             width: 77px;
-            background-color: #3366ff;
-            border-radius: 7px;
+            border-radius: 14px;
             margin: auto;
             font-size: 16px;
             color: #fff;

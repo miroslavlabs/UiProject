@@ -5,7 +5,7 @@
     background-color: #fff;
     position: relative;
     margin-top: -10px;
-    padding-right: 0.6%;
+    padding-right: 0.5%;
 
     .fa-search {
         font-size: 20px;
@@ -21,18 +21,28 @@
 }
 
 .breadcrumbPath {
+    .fa-home:before {
+        content: "";
+    }
+
     .ui-widget-header {
         border: none;
         background: #f1f1f1;
         font-size: 16px;
         color: #444444;
 
-        .fa-chevron-right {
+        .fa-chevron-right {   
             font-weight: 600;
-            &:before {
-                content: "/";
+                &:before {
+                    content: "/";
+                }
+            &:nth-child(2) {
+                &:before {
+                    content: "";
+                }
             }
         }
+        
     }
 }
 

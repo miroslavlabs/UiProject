@@ -1,5 +1,5 @@
 <div class="ui-g-12 ui-md-12 ui-lg-12">
-    <p-panel>
+    <p-panel id="earningGraphPanel">
         <p-header>
             <div class="panel-header">EARNING GRAPH OVERVIEW</div>
             <div class="panel-tools">
@@ -10,13 +10,15 @@
         </p-header>
         <p-chart type="line" height="280px" [data]="data" [options]="options" (onDataSelect)="selectData($event)">
         </p-chart>
-        <div class="ui-g chart-details">
-             <div class="ui-g-3 ui-md-3 ui-lg-3 chart-block" *ngFor="let earningDataItem of earningDataItems">
-                <div class="container">
-                    <div class="chart-value">{{earningDataItem.value}}</div>
-                    <div class="chart-label">{{earningDataItem.label}}</div>
+        <p-footer>
+            <div class="ui-g chart-details">
+                <div class="ui-g-3 ui-md-3 ui-lg-3 chart-block" *ngFor="let earningDataItem of earningDataItems">
+                    <div class="container">
+                        <div class="chart-value">{{earningDataItem.value}}</div>
+                        <div class="chart-label">{{earningDataItem.label}}</div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </p-footer>
     </p-panel>
 </div>

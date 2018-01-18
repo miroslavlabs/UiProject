@@ -5,14 +5,13 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #293744;
+    background-color: #33414e;
     overflow-x: hidden;
 
     #green-line {
         height: 60px;
         width: 100%;
         background-color: #85c875;
-        margin-bottom: 40px;
     }
     
     .menu-category {
@@ -21,18 +20,28 @@
         padding: 15px 25px;
     }
 
-    .generalMenuItems {
-        .ui-panelmenu .ui-panelmenu-header.ui-state-active  {
-            background-color: #253340;
-            border-left: 4px solid #85c875;
-            height: 67px;
-
-            a {
-                background-color: #253340;
-                height: 67px;
-                line-height: 53px;
-            }
+    .generalMenuItems { 
+        .ui-panelmenu .ui-panelmenu-header a {
+            text-decoration: none;
         }
+
+        .ui-panelmenu .ui-panelmenu-header.ui-state-active  {
+                background-color: #253340;
+                border-left: 4px solid #85c875;
+                height: 67px;
+
+                a {
+                    background-color: #253340;
+                    height: 67px;
+                    line-height: 53px;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none; 
+                    }
+                }
+        }
+        
 
         .ui-panelmenu-header {
             height: 67px;
@@ -40,14 +49,14 @@
         }
 
         .ui-widget {
-            background-color: #293744;
+            background-color: #33414e;
             font-size: 20px;
             line-height: 53px;
-            border-color: #293744;
+            border-color: #33414e;
 
             &:hover {
-                background-color: #293744;
-                border-color: #293744;
+                background-color: #33414e;
+                border-color: #33414e;
             }
 
             .ui-menuitem-text,
@@ -55,6 +64,27 @@
             .ui-panelmenu-icon {
                 color: #fff;
             }
+
+            ul.ui-menu-list {
+                li.ui-menuitem {
+                    &:first-child {
+                        .fa-circle-o {
+                            color: #85c875;
+                        }
+                    }
+                    &:nth-child(2) { 
+                        .fa-circle-o {
+                            color: #0bc4df;
+                        }
+                    }
+                    &:last-child { 
+                        .fa-circle-o {
+                            color: #f1a80a;
+                        }
+                    }
+                }
+            }
+            
 
             .ui-menuitem-text {
                 padding-left: 15px;
@@ -77,6 +107,10 @@
                 }
             }
         }
+    }
+
+    #elements-menu-category-header {
+        border-top: 1px solid #253340;
     }
 }
 

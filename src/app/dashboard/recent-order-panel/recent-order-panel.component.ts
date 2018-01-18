@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation} from '@angular/core';
+import * as $ from "jquery";
 
 @Component({
   selector: 'recent-order-panel',
   templateUrl: './recent-order-panel.component.html',
-  styleUrls: ['./recent-order-panel.component.scss']
+  styleUrls: ['./recent-order-panel.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class RecentOrderComponent { 
   recentOrders: any;

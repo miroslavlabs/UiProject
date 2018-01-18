@@ -1,5 +1,5 @@
 <div class="ui-g-12 ui-md-12 ui-lg-12">
-    <p-panel >
+    <p-panel>
         <p-header>
             <div class="panel-header">
                 RECENT ORDER
@@ -10,7 +10,7 @@
                 <i class="fa fa-times"></i>
             </div>
         </p-header>
-        <p-dataTable [value]="recentOrders">
+        <p-dataTable [value]="recentOrders" class="recentOrdersTable">
             <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header">
             </p-column>
         </p-dataTable>

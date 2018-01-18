@@ -5,7 +5,7 @@
   background-color: #fff;
   position: relative;
   margin-top: -10px;
-  padding-right: 0.6%;
+  padding-right: 0.5%;
 }
 
 .search-bar .fa-search {
@@ -18,6 +18,10 @@
 .ui-g {
   margin-top: 35px;
   margin-bottom: 25px;
+}
+
+.breadcrumbPath .fa-home:before {
+  content: "";
 }
 
 .breadcrumbPath .ui-widget-header {
@@ -33,6 +37,10 @@
 
 .breadcrumbPath .ui-widget-header .fa-chevron-right:before {
   content: "/";
+}
+
+.breadcrumbPath .ui-widget-header .fa-chevron-right:nth-child(2):before {
+  content: "";
 }
 
 .dropdownBar div.ui-widget {
