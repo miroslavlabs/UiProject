@@ -1,5 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
+//Global variables
+$light-green: #85c875;
+$light-yellow: #f1a80a;
+$light-blue: #00cccc;
+$darker-blue: #3366ff;
+
+$font-family: 'Lato', sans-serif;
+$font-color: #777777;
+
 body {
     background-color: #f1f1f1;
+    font-family: $font-family;
+    color: $font-color;
 }
+

@@ -1,4 +1,4 @@
-<div class="ui-g-12 ui-md-8 ui-lg-8">
+<div class="ui-g-12 ui-md-12 ui-lg-8">
     <p-panel >
         <p-header>
             <div class="panel-header">
@@ -16,23 +16,20 @@
                 <p-gmap [options]="mapOptions" [style]="{'width':'100%','height':'355px'}"></p-gmap>
             </div>
             <div class="ui-g-5 ui-md-5 ui-lg-5">
-                <p-dataList [value]="topSearches">
+                <p-dataList [value]="topSearches" id="topSearchesTable">
                         <ng-template let-topSearch pTemplate="item">
                             <div class="ui-g">
                                 <div class="ui-g-5 ui-md-5 ui-lg-5">
                                     <img class="searchCountryImg" src="{{topSearch.countryImage}}"/>
                                 </div>
                                 <div class="ui-g-7 ui-md-7 ui-lg-7">
-                                    <div class="">{{topSearch.countryName}}</div>
-                                    <div class="">{{topSearch.searchPercent}}</div>
+                                    <div class="coutry-name">{{topSearch.countryName}}</div>
+                                    <div class="search-percent">{{topSearch.searchPercent}}</div>
                                 </div>
                             </div>
                         </ng-template>
                     </p-dataList>
             </div>
         </div>
-        <p-footer>
-                Footer content here
-        </p-footer>
     </p-panel>
 </div>

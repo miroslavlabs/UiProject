@@ -1,17 +1,20 @@
+@import '..\\styles';
+
+
 .position {
     position: fixed;
     z-index: 2;
 
     .hide-show-button {
-        background-color: #85c875;
+        background-color: $light-green;
         height: 35px;
         width: 35px;
         border-radius: 50%;
         font-size: 18px;
         color: #fff;
         position: relative;
-        left: 290px;
-        top: 4px;
+        left: 287px;
+        top: 13px;
         text-align: center;
         line-height: 35px;
     }

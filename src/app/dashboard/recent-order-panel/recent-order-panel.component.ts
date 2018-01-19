@@ -1,5 +1,4 @@
 import { Component, ViewEncapsulation} from '@angular/core';
-import * as $ from "jquery";
 
 @Component({
   selector: 'recent-order-panel',
@@ -25,7 +24,6 @@ export class RecentOrderComponent {
 
     this.recentOrders = [
       {
-        image: '',
         productName: 'Leisure Suit Casual',
         productCode: '3BSD59',
         status: 'Paid',
@@ -35,7 +33,6 @@ export class RecentOrderComponent {
         trackingN: '#BG6R9853LP'
       },
       {
-        image: '',
         productName: 'Cotton Fleece Casual',
         productCode: '3BH87G',
         status: 'Pending',
@@ -45,7 +42,6 @@ export class RecentOrderComponent {
         trackingN: '#368QRM83B'
       },
       {
-        image: '',
         productName: 'Formal Slim Fit Casual',
         productCode: '4D3GHT',
         status: 'Paid',
@@ -55,7 +51,6 @@ export class RecentOrderComponent {
         trackingN: '#AXZ6F58T3V'
       },
       {
-        image: '',
         productName: 'Velvet Patchwork Casual',
         productCode: '5D4H3G',
         status: 'Failed',

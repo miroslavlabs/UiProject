@@ -1,3 +1,16 @@
+#languageSelectionDropdown .ui-state-default {
+  border: none;
+}
+
+#languageSelectionDropdown .ui-dropdown {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#languageSelectionDropdown .ui-dropdown .ui-dropdown-trigger {
+  right: 20px;
+}
+
 .search-bar {
   height: 60px;
   width: 100%;
@@ -29,6 +42,7 @@
   background: #f1f1f1;
   font-size: 16px;
   color: #444444;
+  padding-left: 3%;
 }
 
 .breadcrumbPath .ui-widget-header .fa-chevron-right {
@@ -39,29 +53,24 @@
   content: "/";
 }
 
-.breadcrumbPath .ui-widget-header .fa-chevron-right:nth-child(2):before {
-  content: "";
-}
-
-.dropdownBar div.ui-widget {
+#reportingPeriodDropdown div.ui-widget {
   border: 1px solid #d6d6d6;
 }
 
-.dropdownBar .ui-corner-all {
+#reportingPeriodDropdown .ui-corner-all {
   border-radius: 0;
 }
 
-.dropdownBar .ui-dropdown:hover,
-.dropdownBar .ui-dropdown:not(:hover) {
+#reportingPeriodDropdown .ui-dropdown:hover,
+#reportingPeriodDropdown .ui-dropdown:not(:hover) {
   background-color: #fff;
 }
 
-.dropdownBar .ui-dropdown .ui-dropdown-label {
+#reportingPeriodDropdown .ui-dropdown .ui-dropdown-label {
   display: block;
   white-space: nowrap;
   overflow: hidden;
   font-weight: normal;
-  width: 100%;
   display: inline;
   padding-right: 0em;
   font-size: 14px;
@@ -69,7 +78,7 @@
   padding-left: 30px;
 }
 
-.dropdownBar .ui-dropdown .ui-dropdown-label:hover {
+#reportingPeriodDropdown .ui-dropdown .ui-dropdown-label:hover {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -78,7 +87,7 @@
   display: inline;
 }
 
-.dropdownBar .ui-dropdown .ui-dropdown-trigger {
+#reportingPeriodDropdown .ui-dropdown .ui-dropdown-trigger {
   border-right: 0;
   border-top: 0;
   border-bottom: 0;
@@ -89,7 +98,7 @@
   padding: .25em;
 }
 
-.dropdownBar .ui-dropdown .ui-dropdown-trigger:hover {
+#reportingPeriodDropdown .ui-dropdown .ui-dropdown-trigger:hover {
   border-right: 0;
   border-top: 0;
   border-bottom: 0;
@@ -100,13 +109,20 @@
   padding: .25em;
 }
 
-.dropdownBar .ui-state-default {
+#reportingPeriodDropdown .ui-state-default {
   border: none;
 }
 
 #period-label {
   display: inline-block;
-  padding-right: 20px;
+  padding-right: 2%;
   font-size: 16px;
   color: #444444;
+}
+
+@media screen and (max-width: 1280px) {
+  .breadcrumbPath .ui-widget-header,
+  #period-label {
+    font-size: 14px;
+  }
 }

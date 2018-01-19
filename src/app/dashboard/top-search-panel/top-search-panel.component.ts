@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 declare var google: any;
 
 @Component({
   selector: 'top-search-panel',
   templateUrl: './top-search-panel.component.html',
-  styleUrls: ['./top-search-panel.component.scss']
+  styleUrls: ['./top-search-panel.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class TopSearchComponent {
   mapOptions: object;

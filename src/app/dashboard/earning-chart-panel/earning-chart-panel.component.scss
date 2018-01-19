@@ -1,3 +1,5 @@
+@import '..\\dashboard.component';
+
 #earningGraphPanel {
     .ui-widget-header {
         border: none;
@@ -17,25 +19,25 @@
 
         &:first-child {
             .container {
-                border-left: 3px solid #99cc66;
+                border-left: 3px solid $light-green;
             }
         }
 
         &:nth-child(2) {
             .container {
-                border-left: 3px solid #f1a80a;
+                border-left: 3px solid $light-yellow;
             }
         }
 
         &:nth-child(3) {
             .container {
-                border-left: 3px solid #1e75eb;
+                border-left: 3px solid $light-blue;
             }
         }
 
         &:last-child {
             .container {
-                border-left: 3px solid #0bc4df;
+                border-left: 3px solid $darker-blue;
             }
         }
 
@@ -53,4 +55,9 @@
     }
 }
 
-@import '..\\dashboard.component';
+@media screen and (max-width: 1280px) {
+    .chart-details .chart-block .container {
+        font-size: 14px;
+    }
+}
+

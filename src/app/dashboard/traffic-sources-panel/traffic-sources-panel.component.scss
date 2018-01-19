@@ -19,22 +19,22 @@
             li.ng-star-inserted {
                 &:first-child {
                     .table-text {
-                        background-color: #3366ff;
+                        background-color: $darker-blue;
                     }
                 }
                 &:nth-child(2) {
                     .table-text {
-                        background-color: #00cccc;
+                        background-color: $light-blue;
                     }
                 }
                 &:nth-child(3) {
                     .table-text {
-                        background-color: #f1a80a;
+                        background-color: $light-yellow;
                     }
                 }
                 &:nth-child(4) {
                     .table-text {
-                        background-color: #85c875;
+                        background-color: $light-green;
                     }
                 }
                 &:last-child {
@@ -47,7 +47,7 @@
 
         .table-text {
             height: 27px;
-            width: 77px;
+            width: 80%;
             border-radius: 14px;
             margin: auto;
             font-size: 16px;
@@ -57,11 +57,21 @@
         }
 
         .table-numbers {
-            color: #777777;
+            color: $font-color;
             font-size: 18px;
             font-weight: 600;
             text-align: center;
             margin: auto;
         }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .trafficSourcesTable .ui-widget-content .table-numbers {
+        font-size: 14px;
+    }
+
+    .trafficSourcesTable .ui-widget-content .table-text {
+        font-size: 13px;
     }
 }

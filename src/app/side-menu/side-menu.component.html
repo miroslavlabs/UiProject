@@ -1,15 +1,18 @@
-<div class="side-menu">
-    <div id="green-line">
+<div id="side-menu-container">
+    <div id="green-line"></div>
+    <div id="side-menu">
+        <user-component></user-component>
+        <div id="panel-menu">
+            <div class="menu-category">
+                GENERAL
+            </div>
+            <p-panelMenu [model]="generalMenuItems" class="generalMenuItems"></p-panelMenu>
+            <div id="elements-menu-category-header" class="menu-category">
+                ELEMENTS
+            </div>
+            <p-panelMenu [model]="elementsMenuItems" class="generalMenuItems"></p-panelMenu>
+        </div>
     </div>
-    <user-component></user-component>
-    <div class="menu-category">
-        GENERAL
-    </div>
-    <p-panelMenu [model]="generalMenuItems" class="generalMenuItems"></p-panelMenu>
-    <div id="elements-menu-category-header" class="menu-category">
-        ELEMENTS
-    </div>
-    <p-panelMenu [model]="elementsMenuItems" class="generalMenuItems"></p-panelMenu>
 </div>
 
    

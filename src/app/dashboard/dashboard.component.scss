@@ -1,36 +1,51 @@
-.ui-widget-header {
-    background: #fff;
-}
+@import '..\\app.component';
 
-.ui-panel {
-    box-shadow: 0 0 4px 1px #bdc1c5;
-}
+#dashboard-container {
+    padding-left: 2%;
 
-.panel-header {
-    display: inline-block;
-    color: #777777;
-    font-size: 13px;
-    padding: 10px 10px;
-    font-weight: 600;
-}
-
-.panel-tools {
-    display: inline-block;
-    float: right;
-    font-size: 17px;
-    color: #a8a8a8;
-
-    i {
-        padding: 10px 10px;
+    .ui-widget-header {
+        background: #fff;
     }
-}
 
-.item {
-    display: inline-block;
-    width: 20%;
-    padding: 2% 0% 2% 10%;
+    .ui-panel {
+        box-shadow: 0 0 4px 1px #bdc1c5;
+    }
 
-    &:first-child {
-        padding-left: 5%;
+    .panel-header {
+        display: inline-block;
+        color: $font-color;
+        font-size: 13px;
+        padding: 10px 10px;
+        font-weight: 600;
+    }
+
+    .panel-tools {
+        float: right;
+        font-size: 17px;
+        color: #a8a8a8;
+
+        i {
+            padding: 10px 10px;
+        }
+    }
+
+    .item {
+        display: inline-block;
+        width: 20%;
+        padding: 2% 0% 2% 10%;
+
+        &:first-child {
+            padding-left: 5%;
+        }
+    }
+
+    @media screen and (max-width: 1282px) {
+        .panel-header {
+            font-size: 11px;
+        }
+
+        .panel-tools {
+            font-size: 14px;
+        }
     }
 }

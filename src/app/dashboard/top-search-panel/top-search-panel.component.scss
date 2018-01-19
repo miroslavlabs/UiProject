@@ -1,5 +1,71 @@
 @import '..\\dashboard.component';
 
-.searchCountryImg {
-    height: 50px;
+.ui-panel-content {
+    .ui-g {
+        margin-bottom: -14px;
+    }
+}
+
+#topSearchesTable {
+    .ui-datalist-content {
+        color: $font-color;
+        margin-top: -50px;
+        margin-right: -20px;
+    }
+
+    .ui-widget-content {
+        border-left: 1px solid #D5D5D5;
+        border-right: none;
+        border-bottom: none;
+        border-top: none;
+
+        .ui-datalist-data {
+            li.ng-star-inserted {
+                border-bottom: 1px solid #D5D5D5;
+                padding: 3px;
+
+                 div.ng-star-inserted {
+                    margin: 0;
+                    padding: 5px;
+
+                    .ui-g-5, .ui-md-5, .ui-lg-5 {
+                        text-align: center;
+                    }
+
+                    .ui-g-7, .ui-md-7, .ui-lg-7 {
+                        line-height: 24px;
+                    }
+                 }
+
+                 &:last-child {
+                    border-bottom: none;
+                 }
+            }
+        }
+    }
+
+    .searchCountryImg {
+        height: 50px;
+    }
+
+    .coutry-name {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .search-percent {
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #topSearchesTable .coutry-name {
+        font-size: 14px;
+    }
+    
+    #topSearchesTable .search-percent {
+        font-size: 16px;
+    }
 }

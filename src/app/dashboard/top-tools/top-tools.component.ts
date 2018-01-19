@@ -10,6 +10,7 @@ import { SelectItem, MenuItem } from 'primeng/primeng';
 export class TopToolsComponent implements OnInit { 
     private items: MenuItem[];
     reportingPeriod: SelectItem[];
+    languageSelection: SelectItem[];
 
     ngOnInit() {
         this.items = [
@@ -22,5 +23,9 @@ export class TopToolsComponent implements OnInit {
         this.reportingPeriod.push({ label: "Last 30 Day's", value: { id: 1, name: "Last 30 Day's", code: "30"}});
         this.reportingPeriod.push({ label: "Last 15 Day's", value: { id: 2, name: "Last 15 Day's", code: "15"}});
         this.reportingPeriod.push({ label: "Last 3 Months's", value: { id: 3, name: "Last 3 Months's", code: "3M"}});
+
+        this.languageSelection = [];
+        this.languageSelection.push({ label: "English", value: { id: 1, name: "English", code: "EN"}});
+        this.languageSelection.push({ label: "Bulgarian", value: { id: 2, name: "Bulgarian", code: "BG"}});
     }
 }

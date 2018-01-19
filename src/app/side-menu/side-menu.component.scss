@@ -1,116 +1,150 @@
-.side-menu {
+@import '..\\app.component';
+
+#side-menu-container {
     height: 100%;
     width: 315px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #33414e;
-    overflow-x: hidden;
 
     #green-line {
+        width: 100%;  
         height: 60px;
-        width: 100%;
-        background-color: #85c875;
-    }
-    
-    .menu-category {
-        color: #bed1e4;
-        font-size: 20px;
-        padding: 15px 25px;
+        background-color: $light-green;
     }
 
-    .generalMenuItems { 
-        .ui-panelmenu .ui-panelmenu-header a {
-            text-decoration: none;
-        }
+    #side-menu {  
+        background-color: #33414e;
+        height: 100%;
 
-        .ui-panelmenu .ui-panelmenu-header.ui-state-active  {
-                background-color: #253340;
-                border-left: 4px solid #85c875;
-                height: 67px;
+        #panel-menu {
+            overflow-y: scroll;
+            height: 100%;
 
-                a {
-                    background-color: #253340;
-                    height: 67px;
-                    line-height: 53px;
-                    text-decoration: none;
+            &::-webkit-scrollbar {
+                width: 8px;
+                background-color: #F5F5F5;
+            }
 
-                    &:hover {
-                        text-decoration: none; 
-                    }
-                }
-        }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                background-color: #555;
+            }
         
-
-        .ui-panelmenu-header {
-            height: 67px;
-            padding-left: 15px;
-        }
-
-        .ui-widget {
-            background-color: #33414e;
-            font-size: 20px;
-            line-height: 53px;
-            border-color: #33414e;
-
-            &:hover {
-                background-color: #33414e;
-                border-color: #33414e;
+            .menu-category {
+                color: #bed1e4;
+                font-size: 20px;
+                padding: 15px 25px;
             }
 
-            .ui-menuitem-text,
-            .ui-menuitem-icon,
-            .ui-panelmenu-icon {
-                color: #fff;
-            }
-
-            ul.ui-menu-list {
-                li.ui-menuitem {
-                    &:first-child {
-                        .fa-circle-o {
-                            color: #85c875;
-                        }
-                    }
-                    &:nth-child(2) { 
-                        .fa-circle-o {
-                            color: #0bc4df;
-                        }
-                    }
-                    &:last-child { 
-                        .fa-circle-o {
-                            color: #f1a80a;
-                        }
+            .generalMenuItems {     
+                .ui-panelmenu-icon {
+                    right: 20px;
+                    top: 23px;
+                    position: absolute;
+                    &:before {
+                            content: '\f105';
                     }
                 }
-            }
-            
+                
+                .ui-panelmenu .ui-panelmenu-header a {
+                    text-decoration: none;
+                }
 
-            .ui-menuitem-text {
-                padding-left: 15px;
-            }
-        }
-        .ui-panelmenu-content-wrapper {
-            background-color: #293744;
-            padding-left: 80px;
-            border-color: #293744;
+                .ui-panelmenu .ui-panelmenu-header.ui-state-active  {
+                        background-color: #253340;
+                        border-left: 4px solid $light-green;
+                        height: 67px;
 
-            .ui-panelmenu-content {
-                background-color: #293744;
-                border-color: #293744;
-                .ui-menuitem-link {
-                    color: #fff;
-                    
+                        a {
+                            background-color: #253340;
+                            height: 67px;
+                            line-height: 53px;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: none; 
+                            }
+
+                            .ui-panelmenu-icon:before {
+                                content: '\f107';
+                            }
+                        }
+                }
+                
+
+                .ui-panelmenu-header {
+                    height: 67px;
+                    padding-left: 15px;
+                }
+
+                .ui-widget {
+                    background-color: #33414e;
+                    font-size: 20px;
+                    line-height: 53px;
+                    border-color: #33414e;
+
                     &:hover {
+                        background-color: #33414e;
+                        border-color: #33414e;
+                    }
+
+                    .ui-menuitem-text,
+                    .ui-menuitem-icon,
+                    .ui-panelmenu-icon {
+                        color: #fff;
+                    }
+
+                    ul.ui-menu-list {
+                        li.ui-menuitem {
+                            &:first-child {
+                                .fa-circle-o {
+                                    color: $light-green;
+                                }
+                            }
+                            &:nth-child(2) { 
+                                .fa-circle-o {
+                                    color: #0bc4df;
+                                }
+                            }
+                            &:last-child { 
+                                .fa-circle-o {
+                                    color: $light-yellow;
+                                }
+                            }
+                        }
+                    }
+                    
+
+                    .ui-menuitem-text {
+                        padding-left: 15px;
+                    }
+                }
+                .ui-panelmenu-content-wrapper {
+                    background-color: #293744;
+                    padding-left: 80px;
+                    border-color: #293744;
+
+                    .ui-panelmenu-content {
                         background-color: #293744;
+                        border-color: #293744;
+                        .ui-menuitem-link {
+                            color: #fff;
+                            
+                            &:hover {
+                                background-color: #293744;
+                            }
+                        }
                     }
                 }
             }
-        }
-    }
 
-    #elements-menu-category-header {
-        border-top: 1px solid #253340;
+            #elements-menu-category-header {
+                border-top: 1px solid #253340;
+            }
+        }
     }
 }
 

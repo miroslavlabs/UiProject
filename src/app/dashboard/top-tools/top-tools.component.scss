@@ -1,3 +1,18 @@
+#languageSelectionDropdown {
+    .ui-state-default {
+        border: none;
+    }
+
+    .ui-dropdown {
+        margin-top: 20px;
+        margin-left: 50px;
+
+        .ui-dropdown-trigger {
+            right: 20px;
+        }
+    }
+}
+
 .search-bar {
     height: 60px;
     width: 100%;
@@ -30,23 +45,19 @@
         background: #f1f1f1;
         font-size: 16px;
         color: #444444;
+        padding-left: 3%;
 
         .fa-chevron-right {   
             font-weight: 600;
-                &:before {
-                    content: "/";
-                }
-            &:nth-child(2) {
-                &:before {
-                    content: "";
-                }
+            &:before {
+                content: "/";
             }
         }
         
     }
 }
 
-.dropdownBar {
+#reportingPeriodDropdown {
     div.ui-widget {
         border: 1px solid #d6d6d6;
     }
@@ -64,7 +75,6 @@
         white-space: nowrap;
         overflow: hidden;
         font-weight: normal;
-        width: 100%;
         display: inline;
         padding-right: 0em;
         font-size: 14px;
@@ -110,7 +120,15 @@
 
 #period-label {
     display: inline-block;
-    padding-right: 20px;
+    padding-right: 2%;
     font-size: 16px;
     color: #444444;
+}
+
+@media screen and (max-width: 1280px) {
+    .breadcrumbPath .ui-widget-header,
+    #period-label {
+        font-size: 14px;
+    }
+
 }

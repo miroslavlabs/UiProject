@@ -45,6 +45,12 @@
   color: #a5acb4;
 }
 
+@media screen and (max-width: 1280px) {
+  .chart-details .chart-block .container {
+    font-size: 14px;
+  }
+}
+
 .ui-widget-header {
   background: #fff;
 }

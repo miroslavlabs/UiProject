@@ -1,12 +1,52 @@
-.ui-widget-header {
+.position {
+  position: fixed;
+  z-index: 2;
+}
+
+.position .hide-show-button {
+  background-color: #85c875;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  left: 287px;
+  top: 13px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.place-button {
+  left: 20px !important;
+}
+
+.dashboard {
+  transition: all 0.3s;
+  margin-left: 305px;
+}
+
+.expand {
+  margin-left: 0;
+}
+
+.hide {
+  width: 0;
+}
+
+#dashboard-container {
+  padding-left: 2%;
+}
+
+#dashboard-container .ui-widget-header {
   background: #fff;
 }
 
-.ui-panel {
+#dashboard-container .ui-panel {
   box-shadow: 0 0 4px 1px #bdc1c5;
 }
 
-.panel-header {
+#dashboard-container .panel-header {
   display: inline-block;
   color: #777777;
   font-size: 13px;
@@ -14,23 +54,31 @@
   font-weight: 600;
 }
 
-.panel-tools {
-  display: inline-block;
+#dashboard-container .panel-tools {
   float: right;
   font-size: 17px;
   color: #a8a8a8;
 }
 
-.panel-tools i {
+#dashboard-container .panel-tools i {
   padding: 10px 10px;
 }
 
-.item {
+#dashboard-container .item {
   display: inline-block;
   width: 20%;
   padding: 2% 0% 2% 10%;
 }
 
-.item:first-child {
+#dashboard-container .item:first-child {
   padding-left: 5%;
+}
+
+@media screen and (max-width: 1282px) {
+  #dashboard-container .panel-header {
+    font-size: 11px;
+  }
+  #dashboard-container .panel-tools {
+    font-size: 14px;
+  }
 }

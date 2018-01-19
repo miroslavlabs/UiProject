@@ -1,3 +1,11 @@
+.ui-widget-header {
+  background: #fff;
+}
+
+.ui-panel {
+  box-shadow: 0 0 4px 1px #bdc1c5;
+}
+
 .panel-header {
   display: inline-block;
   color: #777777;
@@ -40,8 +48,16 @@
   color: #777777;
 }
 
+.recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:first-child td.ng-star-inserted:first-child span::before {
+  content: url(/assets/guide.jpg);
+}
+
+.recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:nth-child(3) td.ng-star-inserted:first-child span::before {
+  content: url(/assets/guide3.jpg);
+}
+
 .recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:first-child td.ng-star-inserted:nth-child(4) span, .recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:nth-child(3) td.ng-star-inserted:nth-child(4) span {
-  padding: 5px 30px;
+  padding: 3% 20%;
   border-radius: 14px;
   margin: auto;
   font-size: 16px;
@@ -51,8 +67,12 @@
   background-color: #00cccc;
 }
 
+.recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:nth-child(2) td.ng-star-inserted:first-child span::before {
+  content: url(/assets/guide2.jpg);
+}
+
 .recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:nth-child(2) td.ng-star-inserted:nth-child(4) span {
-  padding: 5px 18px;
+  padding: 3% 12%;
   border-radius: 14px;
   margin: auto;
   font-size: 16px;
@@ -62,8 +82,12 @@
   background-color: #f1a80a;
 }
 
+.recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:last-child td.ng-star-inserted:first-child span::before {
+  content: url(/assets/guide4.jpg);
+}
+
 .recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:last-child td.ng-star-inserted:nth-child(4) span {
-  padding: 5px 25px;
+  padding: 3% 16%;
   border-radius: 14px;
   margin: auto;
   font-size: 16px;
@@ -94,4 +118,19 @@
 
 .recentOrdersTable .ui-datatable .ui-datatable-data > tr > td {
   border-width: 0px;
+}
+
+@media screen and (max-width: 1280px) {
+  .recentOrdersTable .ui-datatable-tablewrapper .ui-state-default,
+  .recentOrdersTable .ui-widget-content,
+  .recentOrdersTable .ui-datatable-even,
+  .recentOrdersTable .ui-datatable-odd {
+    font-size: 11px;
+  }
+  .recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:first-child td.ng-star-inserted:nth-child(4) span,
+  .recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:nth-child(3) td.ng-star-inserted:nth-child(4) span,
+  .recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:nth-child(2) td.ng-star-inserted:nth-child(4) span,
+  .recentOrdersTable tbody.ui-datatable-data tr.ui-widget-content:last-child td.ng-star-inserted:nth-child(4) span {
+    font-size: 12px;
+  }
 }

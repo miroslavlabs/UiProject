@@ -6,23 +6,23 @@
 
 .fa-bar-chart {
     font-size: 32px;
-    color: #00cccc;
+    color: $light-blue;
     padding-top: 8px;
 }
 
 .fill-color {
-    color: #f1a80a;
+    color: $light-yellow;
 }
 
 .visitors-details-title {
     font-size: 16px;
-    color: #777777;
+    color: $font-color;
 }
 
 .visitors-details-value {
     font-size: 18px;
     font-weight: 600;
-    color: #777777;
+    color: $font-color;
 }
 
 .ui-g {
