@@ -1,12 +1,13 @@
 @import '..\\app.component';
 
-#side-menu-container {
+.side-menu-container {
     height: 100%;
     width: 315px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
+    transition: 0.3s;
 
     #green-line {
         width: 100%;  

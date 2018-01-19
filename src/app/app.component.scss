@@ -17,11 +17,12 @@
         top: 13px;
         text-align: center;
         line-height: 35px;
+        transition: 0.3s;
     }
 }
 
 .place-button {
-    left: 20px !important;
+    left: 10px !important;
 }
 
 .dashboard {
@@ -35,4 +36,8 @@
 
 .hide {
     width: 0;
+}
+
+.display {
+    display: none;
 }

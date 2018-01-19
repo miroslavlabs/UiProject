@@ -1,3 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #f1f1f1;
+  font-family: "Lato", sans-serif;
+  color: #777777;
+}
+
 .position {
   position: fixed;
   z-index: 2;
@@ -15,10 +22,11 @@
   top: 13px;
   text-align: center;
   line-height: 35px;
+  transition: 0.3s;
 }
 
 .place-button {
-  left: 20px !important;
+  left: 10px !important;
 }
 
 .dashboard {
@@ -32,4 +40,8 @@
 
 .hide {
   width: 0;
+}
+
+.display {
+  display: none;
 }

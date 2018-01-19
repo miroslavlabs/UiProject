@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-//import * as $ from "jquery";
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-root',
@@ -7,12 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  // hideShowSideMenu() {
-  //   $('.side-menu').toggleClass('hide');
-  //   $('.dashboard').toggleClass('expand');
-  //   $('.hide-show-button i').toggleClass('fa-indent');
-  //   $('.hide-show-button').toggleClass('place-button');
-  // }
+  hideShowSideMenu() {
+    $('.side-menu-container').toggleClass('hide');
+    $('.user-component-container').toggleClass('display');
+    $('.dashboard').toggleClass('expand');
+    $('.hide-show-button i').toggleClass('fa-indent');
+    $('.hide-show-button').toggleClass('place-button');
+  }
 
   title = 'app';
 }
