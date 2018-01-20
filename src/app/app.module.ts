@@ -1,6 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from './shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SideMenuModule } from './side-menu/side-menu.module';
 import { DashboardModule } from './dashboard/dashboard.module';
@@ -12,8 +11,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
+    SharedModule,
     SideMenuModule,
     DashboardModule
   ],

@@ -1,10 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from '../../shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
-import { PanelMenuModule, PanelModule } from 'primeng/primeng';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { ChartModule } from 'primeng/primeng';
 
 import { SiteVisitPanelComponent } from './site-visits-panel.component';
 
@@ -14,13 +9,7 @@ import { SiteVisitPanelComponent } from './site-visits-panel.component';
     SiteVisitPanelComponent
   ],
   imports: [
-    BrowserModule,
-    PanelMenuModule,
-    PanelModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    CommonModule,
-    ChartModule
+    SharedModule
   ],
   exports: [ SiteVisitPanelComponent ]
 })

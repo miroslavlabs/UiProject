@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from '../../shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
 
 import { UserComponent } from './user-component.component';
@@ -8,7 +8,7 @@ import { UserComponent } from './user-component.component';
     UserComponent
   ],
   imports: [
-    BrowserModule
+    SharedModule
   ],
   exports: [ UserComponent ],
   providers: []

@@ -1,7 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { PanelMenuModule, MenuModule } from 'primeng/primeng';
-import { FormsModule } from '@angular/forms';
+import { SharedModule } from './../shared-module/shared-module.module';
+import { NgModule } from '@angular/core';;
 
 import { UserModule } from './user-component/user-component.module';
 import { SideMenuComponent } from './side-menu.component';
@@ -11,10 +9,7 @@ import { SideMenuComponent } from './side-menu.component';
     SideMenuComponent
   ],
   imports: [
-    BrowserModule,
-    PanelMenuModule,
-    MenuModule,
-    FormsModule,
+    SharedModule,
     UserModule
   ],
   exports: [ SideMenuComponent ],

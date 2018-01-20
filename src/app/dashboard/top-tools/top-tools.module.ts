@@ -1,7 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from '../../shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
-import {FormsModule}    from '@angular/forms';
-import {DropdownModule} from 'primeng/primeng';
+import { DropdownModule } from 'primeng/primeng';
 import { BreadcrumbModule } from 'primeng/primeng';
 
 import { TopToolsComponent } from './top-tools.component';
@@ -12,8 +11,7 @@ import { TopToolsComponent } from './top-tools.component';
     TopToolsComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
+    SharedModule,
     BreadcrumbModule,
     DropdownModule
   ],

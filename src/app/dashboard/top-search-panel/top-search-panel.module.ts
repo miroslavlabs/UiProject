@@ -1,12 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from '../../shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
-import { PanelMenuModule, PanelModule } from 'primeng/primeng';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
 import { GMapModule } from 'primeng/primeng';
-import { ChartModule } from 'primeng/primeng';
-import { DataListModule } from 'primeng/primeng';
 
 import { TopSearchComponent } from './top-search-panel.component';
 
@@ -16,15 +10,8 @@ import { TopSearchComponent } from './top-search-panel.component';
     TopSearchComponent
   ],
   imports: [
-    BrowserModule,
-    PanelMenuModule,
-    PanelModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    CommonModule,
-    GMapModule,
-    ChartModule,
-    DataListModule
+    SharedModule,
+    GMapModule
   ],
   exports: [ TopSearchComponent ]
 })

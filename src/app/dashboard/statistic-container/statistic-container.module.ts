@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from '../../shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
 
 import { StatisticContainerComponent } from './statistic-container.component';
@@ -8,7 +8,7 @@ import { StatisticContainerComponent } from './statistic-container.component';
     StatisticContainerComponent
   ],
   imports: [
-    BrowserModule
+    SharedModule
   ],
   exports: [ StatisticContainerComponent ]
 })

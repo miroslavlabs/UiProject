@@ -1,6 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from '../shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
-import { PanelModule } from 'primeng/primeng';
 
 import { TopToolsModule } from './top-tools/top-tools.module';
 import { StatisticContainerModule } from './statistic-container/statistic-container.module';
@@ -18,8 +17,7 @@ import { DashboardComponent } from './dashboard.component';
     DashboardComponent
   ],
   imports: [
-    BrowserModule,
-    PanelModule,
+    SharedModule,
     TopToolsModule,
     StatisticContainerModule,
     EarningChartModule,

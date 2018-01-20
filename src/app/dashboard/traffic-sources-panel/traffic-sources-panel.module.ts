@@ -1,8 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from '../../shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
-import { PanelModule } from 'primeng/primeng';
-import { DataListModule } from 'primeng/primeng';
-import { ChartModule } from 'primeng/primeng';
 
 import { TrafficSourcesPanelComponent } from './traffic-sources-panel.component';
 
@@ -12,10 +9,7 @@ import { TrafficSourcesPanelComponent } from './traffic-sources-panel.component'
     TrafficSourcesPanelComponent
   ],
   imports: [
-    BrowserModule,
-    PanelModule,
-    DataListModule,
-    ChartModule
+    SharedModule
   ],
   exports: [ TrafficSourcesPanelComponent ]
 })
