@@ -1,14 +1,24 @@
 @import '..\\dashboard.component';
 
+.trafficSourcesPanel {
+    .ui-panel-content-wrapper {
+        display: table;
+        width: 100%;
+
+        .ui-panel-content {
+            height: 434px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
 .trafficSourcesTable {
-
-    .ui-datalist, .ui-widget {
-        margin-top: -20px;
-        margin-bottom: 10px;
-
-        .ng-star-inserted {
-            .ui-g {
-                margin-bottom: -15px; 
+    
+    ul.ui-datalist-data {
+        li.ng-star-inserted {
+            div.ui-g {
+                padding-top: 4.4%;
             }
         }
     }

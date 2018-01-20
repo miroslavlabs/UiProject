@@ -20,9 +20,10 @@
         height: 100%;
 
         #panel-menu {
-            overflow-y: scroll;
-            height: 100%;
+            overflow-y: auto;
+            height: calc(100% - 250px);
 
+            //Custom scrollbar for Chrome
             &::-webkit-scrollbar {
                 width: 8px;
                 background-color: #F5F5F5;

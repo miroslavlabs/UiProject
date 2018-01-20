@@ -17,8 +17,6 @@
   border-bottom: 1px solid #cccccc;
   background-color: #fff;
   position: relative;
-  margin-top: -10px;
-  padding-right: 0.5%;
 }
 
 .search-bar .fa-search {
@@ -26,9 +24,10 @@
   line-height: 60px;
   color: #444444;
   float: right;
+  padding-right: 1.5%;
 }
 
-.ui-g {
+#top-tools-container {
   margin-top: 35px;
   margin-bottom: 25px;
 }

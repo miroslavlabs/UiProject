@@ -1,16 +1,9 @@
 @import '..\\dashboard.component';
 
-.ui-panel-content {
-    .ui-g {
-        margin-bottom: -14px;
-    }
-}
-
 #topSearchesTable {
     .ui-datalist-content {
         color: $font-color;
-        margin-top: -50px;
-        margin-right: -20px;
+        margin: -16px -20px -16px 0;
     }
 
     .ui-widget-content {
